@@ -1,3 +1,3 @@
 # IBVS_YouBot
 
-![](https://github.com/Jegovila/IBVS_YouBot/blob/main/gif.gif)
+![](https://github.com/Jegovila/IBVS_YouBot/blob/main/ibvs.gif)

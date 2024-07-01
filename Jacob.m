@@ -1,0 +1,14 @@
+function J = Jacob (q)
+    x_b = q(1);
+    y_b = q(2);
+    theta_b = q(3);
+    theta_1 = q(4);
+    theta_2 = q(5);
+    theta_3 = q(6);
+    theta_4 = q(7);
+    theta_5 = q(8);
+    
+    J = [1, 0, (337*sin(theta_2 + 1571/1000)*sin(theta_1 + theta_b)*sin(theta_3))/2500 - (831*sin(theta_b))/5000 - (121*sin(theta_2 + theta_3 + theta_4 + 1571/500)*sin(theta_1 + theta_b))/625 - (31*cos(theta_2 + 1571/1000)*sin(theta_1 + theta_b))/200 - (337*cos(theta_2 + 1571/1000)*sin(theta_1 + theta_b)*cos(theta_3))/2500 - (33*sin(theta_1 + theta_b))/1000, -(sin(theta_1 + theta_b)*(968*sin(theta_2 + theta_3 + theta_4 + 1571/500) + 775*cos(theta_2 + 1571/1000) + 674*cos(theta_2 + theta_3 + 1571/1000) + 165))/5000, -(cos(theta_1 + theta_b)*(775*sin(theta_2 + 1571/1000) - 968*cos(theta_2 + theta_3 + theta_4 + 1571/500) + 674*sin(theta_2 + theta_3 + 1571/1000)))/5000, (cos(theta_1 + theta_b)*(484*cos(theta_2 + theta_3 + theta_4 + 1571/500) - 337*sin(theta_2 + theta_3 + 1571/1000)))/2500, (121*cos(theta_2 + theta_3 + theta_4 + 1571/500)*cos(theta_1 + theta_b))/625, 0;
+         0, 1, (33*cos(theta_1 + theta_b))/1000 + (831*cos(theta_b))/5000 + (121*sin(theta_2 + theta_3 + theta_4 + 1571/500)*cos(theta_1 + theta_b))/625 + (31*cos(theta_2 + 1571/1000)*cos(theta_1 + theta_b))/200 + (337*cos(theta_2 + 1571/1000)*cos(theta_1 + theta_b)*cos(theta_3))/2500 - (337*sin(theta_2 + 1571/1000)*cos(theta_1 + theta_b)*sin(theta_3))/2500,  (cos(theta_1 + theta_b)*(968*sin(theta_2 + theta_3 + theta_4 + 1571/500) + 775*cos(theta_2 + 1571/1000) + 674*cos(theta_2 + theta_3 + 1571/1000) + 165))/5000, -(sin(theta_1 + theta_b)*(775*sin(theta_2 + 1571/1000) - 968*cos(theta_2 + theta_3 + theta_4 + 1571/500) + 674*sin(theta_2 + theta_3 + 1571/1000)))/5000, (sin(theta_1 + theta_b)*(484*cos(theta_2 + theta_3 + theta_4 + 1571/500) - 337*sin(theta_2 + theta_3 + 1571/1000)))/2500, (121*cos(theta_2 + theta_3 + theta_4 + 1571/500)*sin(theta_1 + theta_b))/625, 0;
+         0, 0,                                                                                                                                                                                                                                                                                                                                                        0,                                                                                                                                                              0,                (121*sin(theta_2 + theta_3 + theta_4 + 1571/500))/625 + (31*cos(theta_2 + 1571/1000))/200 + (337*cos(theta_2 + theta_3 + 1571/1000))/2500,                    (121*sin(theta_2 + theta_3 + theta_4 + 1571/500))/625 + (337*cos(theta_2 + theta_3 + 1571/1000))/2500,                        (121*sin(theta_2 + theta_3 + theta_4 + 1571/500))/625, 0];
+ 
